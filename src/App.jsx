@@ -89,7 +89,7 @@ class App extends Component {
             fullname:fullname.value,
             email:email.value,
             role:role.value,
-            // password:signuppassword.value
+            password:signuppassword.value
 
         });
         console.log(data);
