@@ -1,0 +1,310 @@
+#container{ 
+    width: 100%; 
+    height: 100%; 
+} 
+#header{ 
+    width: 100%; 
+    height: 70px; 
+    background: #F5EFFF; 
+} 
+#content{ 
+    width: 100%; 
+    height: calc(100% - 110px); 
+    background:#E5D9F2; 
+} 
+#footer{ 
+    width: 100%; 
+    height: 40px; 
+    background: #A294F9; 
+}
+#header .logo{
+    width: 40px;
+    /* height: 40px; */  
+    position: relative;
+    top:10px;
+    float: left;
+    margin-left: 15px;
+}
+
+#header .logoText{
+    position: relative;
+    top:18px;
+    margin-left: 9px;
+    font-size: 12pt;
+    font-weight: bold;
+    float:left;
+}
+#header .logoText span{
+    color:rgb(45, 223, 155) ;
+}
+#header .signinIcon {
+    width: 40px;
+    /* height: 40px; */  
+    position: relative;
+    top:10px;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+#header .signinText{
+    position: relative;
+    top:20px;
+    margin-right: 9px;
+    font-size: 14pt;
+    font-weight: bold;
+    float:right;
+    cursor: pointer;
+}
+#header .signinText:hover,
+.signinIcon:hover + .signinText
+{
+    color: #4a9eff;
+    text-decoration: underline;
+}
+
+#footer .copyrightText{
+    position: relative;
+    top:10px;
+    margin-left: 15px;
+    font-size: 15pt;
+    font-weight: bold;
+    float:left;
+    color: white;
+}
+#footer .socialmediaIcon{
+    width: 20px;
+    /* height: 40px; */  
+    position: relative;
+    top:10px;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+#content .text1{
+    position: relative;
+    top: 8px;
+    margin-left: 15px;
+    font-size: 20pt;
+    font-weight: bold;
+    color:#1A2B4C;
+
+}
+
+#content .text2{
+    position: relative;
+    top: 24px;
+    margin-left: 10px;
+    font-size: 40pt;
+    font-weight: bold;
+    color: #6B6B6B; 
+
+}
+#content .text3{
+    position: relative;
+    top: 30px;
+    margin-left: 15px;
+    font-size: 30pt;
+    color: #F4D03F;
+}
+
+#content .searchBar{
+    position: relative;
+    top: 40px;
+    margin-left: 15px;
+    display: block;
+    border-radius: 10px;
+    background: white;
+    width: fit-content;
+    /* height: 50px; */
+    padding: 10px;
+}
+
+.searchBar .searchjobText{
+    width: 300px;
+    height: 40px;
+    padding-left:30px ;
+    border: none;
+    border-right: 0.5px solid black;
+    font-size: 12pt;
+    background: wheat;
+    background: url('/searchicon.png') no-repeat;
+    background-size: 40px 30px;
+    background-position: 0px center;
+}
+
+.searchBar .joblocationText{
+    /* width: 300px;
+    height: 40px; */
+    width: fit-content;
+    padding-left:30px ;
+    border: none;
+    font-size: 12pt;
+    background: wheat;
+    background: url('/location.png') no-repeat;
+    background-size: 30px 20px;
+    background-position: 0px center;
+}
+
+.searchBar .searchjob{
+    /* width: 95px; */
+    height: 40px;
+    padding-top: 2px;
+    padding-left: 10px;
+    font-size: 10pt;
+    font-weight: bold; 
+    color: black;
+    border-radius: 10px;
+    background: rgb(168, 191, 241);
+}
+#popup{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    /* background-color: rgb(168, 191, 241); */
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+#popupwindow{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visibility */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border-top-left-radius: 55px; */
+    /* border-top-right-radius: 15px; */
+}
+#popupheader{
+    width: 100%;
+    height: 60px;
+    background-color:#4a9eff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20pt;
+    font-weight: bold;
+    color: white;
+    /* border-top-left-radius: 55px; */
+    /* border-top-right-radius: 15px; */
+}
+#signin{
+    /* width: 100%; */
+    width: calc(100% - 10px);
+    height: calc(100% - 60px);
+    background: white;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px ;
+    padding: 5px;
+}
+#signin .usernamelabel{
+    display: block;
+    padding: 15px 0px 3px 0px;
+}
+#signin input{
+    width: 100%;
+    height: 25px;
+    padding: 0%;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+#signin .passwordlabel{
+    display: block;
+    padding: 20px 0px 3px 0px;
+}
+#signin .forgetpassword{
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: right;
+    padding :10px 0px 3px 0px;
+}
+#signin .forgetpassword label{
+    background-color: #F4D03F;
+    cursor: pointer;
+}
+#signin .forgetpassword label:hover{
+    color: aqua;
+}
+#signin .signinButton{
+    width: 100%;
+    /* width: fit-content; */
+    height: 25px;
+    background: rgb(45, 223, 155);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#signin .signinButton:hover{
+    color: black;
+    font-weight: 800;
+}
+#signin .div1{
+    width: 100%;
+    height: 60px;
+}
+#signin .div2{
+    width: 100%;
+    font-size:13pt ;
+    text-align: center;
+}
+#signin .div2 label {
+    color: rgb(168, 191, 241);
+    cursor: pointer;
+}
+#signin .div2 label:hover{
+    color: blue;
+}
+
+#signup{
+    width: calc(100%-10px);
+    height: calc(100%-60px);
+    padding: 5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+#signup input{
+    width: 100%;
+    border: 2px solid black;
+}
+#signup label{
+    display: block;
+    padding: 0px 0px 3px 0px;
+    border-radius: 10px;
+}
+#signup select{
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+}
+#signup button{
+    width: 100%;
+    height: 30px;
+    border: none;
+   background-color: rgb(12,120,130);
+   color: white;
+   margin-top: 5px;
+   font-size: 18px;
+   cursor: pointer;
+
+}
+#signup button:hover{
+    background-color: rgb(45, 223, 155);
+}
+#signup div{
+    width: 100%;
+    font-size: 13pt;
+    font-weight: bold;
+}
+#signup div span{
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: lime;
+    cursor: pointer;
+}
+#signup div span:hover{
+    color: rgb(192, 191, 241);
+}
